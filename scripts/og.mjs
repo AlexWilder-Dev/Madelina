@@ -63,7 +63,7 @@ await sharp(photo)
     { input: strap, left: Math.round(cx - strapMeta.width / 2), top: logoTop + logoMeta.height + 14 },
     { input: line, left: Math.round(cx - lineMeta.width / 2), top: logoTop + logoMeta.height + 14 + strapMeta.height + 10 },
   ])
-  .jpeg({ quality: 82, mozjpeg: true, chromaSubsampling: '4:2:0' })
+  .jpeg({ quality: 84, progressive: false, trellisQuantisation: true, overshootDeringing: true, quantisationTable: 3, chromaSubsampling: '4:2:0' })
   .toFile('public/og.jpg');
 
 const meta = await sharp('public/og.jpg').metadata();
