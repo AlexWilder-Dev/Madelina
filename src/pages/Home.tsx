@@ -25,9 +25,13 @@ function Here() {
   const today = branch.hours[dow];
   const wineLater = today.find((x) => x.kind === 'wine' && x.open > minutes);
 
+  // Tonight's wine session, or (in preview on another day) the first one in the week
+  const wineSession = today.find((x) => x.kind === 'wine') ?? branch.hours.flat().find((x) => x.kind === 'wine');
+  const wineEnds = wineSession ? fmtTime(wineSession.close) : '';
+
   let { head, sub } = t;
   if (evening && !wineLive) {
-    head = 'Wine night until 11pm';
+    head = `Wine night until ${wineEnds}`;
     sub = 'Preview: this is how the site looks at Brixton on Friday and Saturday evenings.';
   }
 
@@ -57,7 +61,7 @@ function Here() {
           )}
           {evening && (
             <p className="here__tonight">
-              <Icon name="glass" /> Wine night on now, until 11pm
+              <Icon name="glass" /> Wine night on now, until {wineEnds}
               <Link to="/book?type=wine">Book</Link>
             </p>
           )}
