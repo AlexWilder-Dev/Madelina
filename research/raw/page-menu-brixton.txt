@@ -1,0 +1,32 @@
+Menu Brixton
+SANDWICHES
+BREAKFAST BAGEL    £11
+Bacon, Egg, Avocado, Spinach & Garlic Mayo
+VEGAN BAGEL    £9
+Falafel, Hummus, Tomatoes, Rocket & Vegan Garlic Mayo
+SALMON BAGEL    £11
+Smoked Salmon, Herbal Cream cheese, Cucumber, Dill & Lemon
+FESTIVE BAGEL    £10
+Melted Brie, Bacon, Cranberry Sauce & Toasted Walnuts
+HALLOUMI FOCACCIA   £11
+Halloumi, Black Olives Tapenade, Avocado & Tomato Focaccia
+CHORIZO FOCACCIA     £10
+Egg, Cheese, Spicy Chorizo & Chilli Flakes
+MOZZARELLA FOCACCIA     £9
+Mozzarella, Tomatoes, Rocket, House-made Pesto & Balsamic Glaze
+BRUNCH
+FULL ENGLISH BREAKFAST   £15
+Bacon, Sausage, Eggs, Tomato, Baked Beans, Sautéed Mushrooms with Onions & Garlic, Sourdough & Butter
+VEGGIE BREAKFAST   £15
+Halloumi, Falafel, Egg, Tomato, Baked Beans, Sautéed Mushrooms with Onions & Garlic, Spinach Sourdough & Butter
+GARDEN BLISS  £14
+Sweet Potatoes, Falafel, Hummus, Fresh Spinach, Avocado & Mushrooms, Garnished with Mint and Pomegranate seeds, Drizzled
+with Vegan Garlic Sauce Ⓥ
+EGGS ROYAL    £14
+English Muffin, Smoked Salmon, wilted spinach , 2 Poached Eggs topped with Hollandaise Sauce
+EGGS BENEDICT   £14
+2 Poached eggs on English muffin, wilted spinach, 2 Bacon topped with hollandaise sauce garnished with edible flowers & side salad
+AVOCADO ON TOAST   £14
+Poached Egg, Avocado on Sourdough with Grilled Cherry Tomatoes, Garnished with Feta, Pomegranate & Pumpkin Seeds
+SOUP OF THE DAY  £8
+Served with toasted sourdough and butter

@@ -1,0 +1,168 @@
+Madelina Brixton - Cafe, Vegan Pastry, Smoothies in South West London | Spinach
+spinach    Cities Best dishes How we rank
+Cancel
+Get the app
+Cities/South West London/Madelina Brixton
++ a
+lightbox + a JSON manifest (rendered by the parent page, not here —
+the page owns the gallery dialog + manifest + slot coordinator).
+PREVIEW: plain tiles; imgs carry data-fallbacks/-id/-ids for
+BaseLayout's document-level failover; NO data-photo-slot. -->   image    image    image  +17 more
+20 photos  close
+Madelina Brixton
+Cafe, Vegan Pastry, Smoothies
+Vegan options
+ABCDE  Poor vegan options ›    ★ 3.7 · $$  · Cafe   · British, Mediterranean, Cafe   · Hours
+BreakfastLunchCoffee/TeaDessertWork/StudyTakeoutDates
+Amenities: deck Outdoor Seating wifi Wifi
+call Call
+language Website
+photo_camera Instagram
+the page script
+targets. PREVIEW: native / per item (JS-free). -->    Popular tips:  "Try the vegan banana bread, doughnuts, and blondies for dessert."  "Try the vegan banana bread, doughnuts, and blondies for dessert."
+"Enjoy the outdoor terrace seating, especially on sunny days."
+"Expect staff may be unfamiliar with vegan concepts at times; clarify your order carefully."
+"Visit on Friday evenings for wine nights with snacks and cheeseboards."
+"Kitchen service may close earlier than posted hours; check availability before visiting late afternoons."
+Must-try:  banana bread, cake, chai latte  banana bread — popular (×2)
+cake — popular (×2)
+chai latte — popular (×2)
+smoothie — popular (×2)
+coffee — popular (×5)
+Praised for:  friendly service, cozy atmosphere, generous portions  friendly service ×9
+cozy atmosphere
+generous portions
+lively atmosphere
+Show more
+Madelina Brixton serves a range of vegan-labelled baguettes, bagels, and a Mediterranean vegan brunch plate among its mostly non-vegan menu. The cozy cafe is also known for its vegan banana bread, doughnuts, and smoothies made with dairy-free milks. It has a small indoor space complemented by a terrace, and occasional wine bar events add a social dimension in the evenings.
+Read more        schedule  Hours
+expand_more
+Sunday 10 AM-4 PM
+Monday 8 AM-3 PM
+Tuesday 8 AM-3 PM
+Wednesday 8 AM-3 PM
+Thursday 8 AM-3 PM
+Friday 8 AM-3 PM
+Saturday 9 AM-4 PM
+Open the map →    location_on 105 Acre Ln, Brixton Hill, London, SW2 5TU, United Kingdom
+directions
+Navigate on Google Maps
+Spinach Rating
+star 3.7
+out of 5
+Spinach Rating is created by analysing reviews and signals from the web.
+info
+External ratings
+star 4.4 (183 reviews)
+Read on Google Maps open_in_new
+star 3.25 (4 reviews)
+Read on HappyCow open_in_new
+that doesn't survive the innerHTML injection on /map, so
+in the preview it renders unstyled (plain "Vegan Friendliness / A" text).
+The preview's compact VFI pill already deep-links here on the full page. -->      Vegan Friendliness
+i
+Poor vegan options
+E
+VEGAN OPTIONS Some · 3–5 dishes
+MENU Unclear in places
+STAFF Basic understanding
+warning   Some users reported staff aren't always sure about ingredients.
+Others mentioned inconsistent vegan claims on the menu.
+A few noted hidden animal ingredients in dishes labeled vegan — ask about sauces and broths.
+More in South West London
+A
+Amrutha
+100% Vegan
+Indian Soul Food, Fully Vegan, Buffet
+★ 5.0 · Indian · Soul Food · Thai · Asian
+T
+Take A Bite And Smile
+100% Vegan
+Italian Patisserie, Fully Vegan, Pistachio Cream
+★ 5.0 · Italian · Bakery · European
+P
+P!nch
+100% Vegan
+Breakfast Brunch, Fully Vegan, Omelette Royale
+★ 5.0 · Vegan · Western · Breakfast · Brunch · Bakery
+T
+Tofu Vegan Gloucester Road
+100% Vegan
+Chinese Vegan, Dim Sum, Noodles
+★ 5.0 · Chinese · Asian
+N
+Next Door Baker by Kegarmo
+A
+Bakery, Vegan Cakes
+★ 5.0 · Bakery · Coffee
+Two scores: Spinach Rating grades the food. Vegan Friendliness grades how easy it is to eat vegan here.
+How we rank →
+The app is the full experience.
+The live map, every ranking, and the dishes worth ordering — free, no signup.
+Download on the App Store
+Get it on Google Play
+South West London All Cities
+spinach
+Cities
+Best vegan food in Berlin
+Best vegan food in London
+Best vegan food in Barcelona
+Best vegan food in Portland
+Best vegan food in Paris
+Best vegan food in New York City
+Best vegan food in Los Angeles
+Best vegan food in Hamburg
+Best vegan food in Lisbon
+Best vegan food in Amsterdam
+Best vegan food in Ho Chi Minh City
+Best vegan food in Vancouver
+Best vegan food in Cologne
+Best vegan food in San Francisco
+Best vegan food in Seattle
+Best vegan food in Madrid
+Best vegan food in Toronto
+Best vegan food in San Diego
+Best vegan food in Rome
+Best vegan food in Kyoto
+Top Vegan Cities 2026
+All 158 city guides
+Dishes
+Best vegan pizza
+Best vegan ice cream
+Best vegan coffee
+Best vegan pastry
+Best vegan burger
+Best vegan cake
+Best vegan bowl
+Best vegan ramen
+Best vegan sandwich
+Best vegan sushi
+Best vegan falafel
+Best vegan tacos
+Understand the rating
+How we rank
+VFI explainer
+About
+Team
+Blog
+Legal
+Privacy
+Terms
+Support
+Get the app
+Instagram  Data refreshed 2026-10-11 from the Spinach app.
+© 2026 Spinach · Vegan Food Guide
+Spinach Save · filter · navigate
+Get app
+Take Spinach with you
+Save the venues you want to try, filter by what's open right now,
+and get walking directions on the day. 158 ranked cities, daily updates.
+Free
+No signup needed
+Updated daily
+Download free
+Maybe later
+error: advance to next URL in
+data-fallbacks AND queue the photo_id for batched reporting
+to /functions/v1/report-photo-failure. The next daily refresh
+then excludes the broken photo (filter is fail_report_count

@@ -1,0 +1,31 @@
+SANDWICHES
+BREAKFAST BAGEL    £11
+Bacon, Egg, Avocado, Spinach & Garlic Mayo.
+VEGAN BAGEL    £9
+Falafel, Hummus, Tomatoes, Rocket & Vegan Garlic Mayo
+SALMON BAGEL    £11
+Smoked Salmon, Herbal Cream cheese, Cucumber, Dill & Lemon
+FESTIVE BAGEL    £10
+Melted Brie, Bacon, Cranberry Sauce & Toasted Walnuts
+HALLOUMI FOCACCIA   £11
+Halloumi, Black Olive tapenade, Avocado, Tomatoes & Rocket with Vegan garlic mayo
+CHORIZO FOCACCIA     £10
+Spicy Chorizo, Eggs & Cheese topped with rocket
+MOZZARELLA FOCACCIA     £9
+Mozzarella, Tomatoes, Rocket, House-made Pesto & Balsamic Glaze
+BRUNCH
+FULL ENGLISH BREAKFAST   £15
+Bacon, Sausage, Eggs, Tomato, Baked Beans, Sautéed Mushrooms with Onions & Garlic, Sourdough & Butter
+VEGGIE BREAKFAST   £15
+Halloumi, Falafel, Egg, Tomato, Baked Beans, Sautéed Mushrooms with Onions & Garlic, Spinach Sourdough & Butter
+GARDEN BLISS  £14
+Sweet Potatoes, Falafel, Hummus,
+Fresh Spinach, Avocado & Mushrooms, Garnished with Mint and Pomegranate seeds, Drizzled with Vegan Garlic Sauce Ⓥ
+EGGS ROYAL    £15
+English Muffin, Smoked Salmon, Wilted Spinach, 2 Poached Eggs, topped with Hollandaise Sauce.
+EGGS BENEDICT   £14
+English Muffin, Bacon, Wilted Spinach, 2 Poached Eggs, topped with Hollandaise sauce
+AVOCADO ON TOAST   £13
+Poached Egg, Avocado on Sourdough with Grilled Cherry Tomatoes, Garnished with Feta, Pomegranate & Pumpkin Seeds
+SOUP OF THE DAY  £8
+Served with toasted sourdough and butter
