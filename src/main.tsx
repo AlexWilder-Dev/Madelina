@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import '@fontsource/inknut-antiqua/400.css';
-import '@fontsource-variable/archivo/wdth.css';
-import '@fontsource-variable/archivo/wdth-italic.css';
+import '@fontsource-variable/bodoni-moda/opsz.css';
+import '@fontsource-variable/bodoni-moda/opsz-italic.css';
+import '@fontsource-variable/dm-sans/opsz.css';
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/site.css';

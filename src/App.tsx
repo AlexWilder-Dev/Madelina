@@ -2,7 +2,7 @@ import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { HashRouter, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { BranchProvider, useBranch } from './lib/branch';
-import { Footer, Header } from './components/Frame';
+import { FloatingBook, Footer, Header } from './components/Frame';
 import { Home } from './pages/Home';
 import { Menu } from './pages/Menu';
 import { Book } from './pages/Book';
@@ -58,6 +58,7 @@ export default function App() {
           <Header />
           <Routed />
           <Footer />
+          <FloatingBook />
         </BranchProvider>
       </HashRouter>
     </MotionConfig>

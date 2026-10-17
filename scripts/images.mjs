@@ -56,3 +56,34 @@ await sharp(square).resize(180).png().toFile('public/apple-touch-icon.png');
 await sharp(square).resize(48).png().toFile('public/favicon-48.png');
 await sharp(square).resize(192).png().toFile('public/icon-192.png');
 console.log('icons done');
+
+// Cut-outs: whole cups and bowls lifted out of the overhead shots with a circular mask
+const cutouts = [
+  ['cut-latte', 'c.jpg', 1366, 672, 247, 600],
+  ['cut-bowl', 'cover.jpg', 1748, 719, 301, 700],
+];
+for (const [name, file, cx, cy, r, size] of cutouts) {
+  const side = r * 2;
+  const mask = Buffer.from(
+    `<svg width="${side}" height="${side}"><circle cx="${r}" cy="${r}" r="${r - 1}" fill="#fff"/></svg>`,
+  );
+  // Two passes: sharp would otherwise resize before compositing the mask
+  const masked = await sharp(`${SRC}/${file}`)
+    .extract({ left: cx - r, top: cy - r, width: side, height: side })
+    .ensureAlpha()
+    .composite([{ input: mask, blend: 'dest-in' }])
+    .png()
+    .toBuffer();
+  const info = await sharp(masked).resize(size).webp({ quality: 82, alphaQuality: 90 }).toFile(`${OUT}/${name}.webp`);
+  console.log(name, `${info.width}x${info.height}`, `${Math.round(info.size / 1024)}KB`);
+}
+
+// The wordmark again in their deep green, for cream backgrounds
+const { data, info: li } = await sharp(logo).resize({ width: 900 }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+for (let i = 0; i < data.length; i += 4) {
+  data[i] = 0x12;
+  data[i + 1] = 0x3f;
+  data[i + 2] = 0x26;
+}
+await sharp(data, { raw: { width: li.width, height: li.height, channels: 4 } }).png({ compressionLevel: 9 }).toFile('src/assets/logo-wordmark-green.png');
+console.log('green logo done');

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { branches, type BranchId } from '../data/madelina';
 import { useBranch } from '../lib/branch';
 
-/** "Brixton  Dulwich" — the two words from their own header, used as the switch. */
+/** "Brixton / Dulwich" as two words in a heading: the one you're on is set in full, the other faint. */
 export function BranchWords({ id }: { id: string }) {
   const { branch, setBranch } = useBranch();
   return (

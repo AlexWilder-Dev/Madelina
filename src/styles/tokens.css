@@ -1,42 +1,36 @@
 /*
-  Colours are Madelina's own: the deep green and pale gold of their current site theme,
-  the brighter green they use for links ("Menu Brixton"), and the logo's gold.
+  Madelina's green and gold (their site theme and logo), with the colours of their painted
+  plates and garnishes: glaze cream, marigold, terracotta, and the purple of the pansies on top.
 */
 :root {
-  --bg: #123f26;
-  --bg-deep: #0e3520;
-  --ink: #e5da85;
-  --ink-soft: rgba(229, 218, 133, 0.74);
-  --ink-faint: rgba(229, 218, 133, 0.5);
-  --rule: rgba(229, 218, 133, 0.26);
-  --link: #4cc06d;
+  --green: #123f26;
+  --green-deep: #0c2e1b;
+  --cream: #f3ead5;
+  --cream-deep: #eadcbc;
   --gold: #e3b849;
+  --marigold: #eaa62a;
+  --terracotta: #b4512a;
+  --pansy: #2e1747;
+  --pansy-light: #c9a8e8;
+  --ink: #123f26;
+  --ink-soft: rgba(18, 63, 38, 0.72);
+  --ink-line: rgba(18, 63, 38, 0.18);
+  --paper: #f3ead5;
+  --paper-soft: rgba(243, 234, 213, 0.72);
+  --paper-line: rgba(243, 234, 213, 0.22);
 
-  --serif: 'Inknut Antiqua', Georgia, serif;
-  --sans: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Bodoni Moda Variable', 'Bodoni Moda', 'Didot', Georgia, serif;
+  --sans: 'DM Sans Variable', 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --gutter: 20px;
-  --wide: 1200px;
-  --text: 600px;
-  --space: 88px;
-  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --wide: 1320px;
+  --ease: cubic-bezier(0.22, 0.75, 0.2, 1);
 
-  color-scheme: dark;
-}
-
-/* Brixton on a Friday or Saturday evening: the room goes darker and warmer. */
-:root[data-mode='evening'] {
-  --bg: #0b2517;
-  --bg-deep: #081d11;
-  --ink: #f0dfa0;
-  --ink-soft: rgba(240, 223, 160, 0.74);
-  --ink-faint: rgba(240, 223, 160, 0.48);
-  --rule: rgba(240, 223, 160, 0.22);
+  color-scheme: light;
 }
 
 @media (min-width: 900px) {
   :root {
     --gutter: 48px;
-    --space: 136px;
   }
 }

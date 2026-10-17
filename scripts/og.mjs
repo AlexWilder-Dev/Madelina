@@ -1,70 +1,47 @@
-// One-off: builds public/og.jpg (1200×630) for link previews.
-// Their overhead table photo, with a deep-green "plate" in the middle carrying the gold logo,
-// like the roundel of their monogram. Run with `npm run og`.
+// One-off: builds public/og.jpg (1200×630) for link previews, in the site's own look:
+// the green panel with the Bodoni headline on the left, their table photo on the right.
+// Run with `npm run og`.
 import sharp from 'sharp';
 import { statSync } from 'node:fs';
 
 const W = 1200;
 const H = 630;
-const R = 236;
-const cx = W / 2;
-const cy = H / 2;
+const PHOTO_W = 540;
+const GREEN = '#123f26';
 
 const photo = await sharp('research/img/cover.jpg')
-  .resize({ width: W, height: 800 })
-  .extract({ left: 0, top: 70, width: W, height: H })
-  .modulate({ brightness: 0.92 })
+  .extract({ left: 260, top: 0, width: 1250, height: 1460 })
+  .resize({ width: PHOTO_W, height: H, fit: 'cover' })
   .toBuffer();
 
-const disc = Buffer.from(`
-<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
-      <stop offset="78%" stop-color="#000" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <circle cx="${cx + 6}" cy="${cy + 12}" r="${R + 26}" fill="url(#shadow)"/>
-  <circle cx="${cx}" cy="${cy}" r="${R}" fill="#123f26"/>
-  <circle cx="${cx}" cy="${cy}" r="${R - 14}" fill="none" stroke="#e3b849" stroke-width="2.5"/>
-  <circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="#0c2a19" stroke-width="4"/>
-</svg>`);
+const text = (markup, font, file, width) =>
+  sharp({ text: { text: markup, font, fontfile: file, rgba: true, dpi: 72, width, spacing: 0 } }).png().toBuffer();
 
-const logo = await sharp('research/img/background-logo.png').trim().resize({ width: 360 }).toBuffer();
-const logoMeta = await sharp(logo).metadata();
+const roman = 'scripts/fonts/BodoniModa.ttf';
+const italic = 'scripts/fonts/BodoniModa-Italic.ttf';
+const sans = 'scripts/fonts/DMSans.ttf';
 
-const line = await sharp({
-  text: {
-    text: '<span foreground="#e5da85" letter_spacing="2600">BRIXTON · EAST DULWICH</span>',
-    font: 'Archivo 10.5',
-    fontfile: 'scripts/fonts/Archivo.ttf',
-    rgba: true,
-    dpi: 144,
-  },
-}).png().toBuffer();
-const lineMeta = await sharp(line).metadata();
+const line1 = await text('<span foreground="#f3ead5" letter_spacing="-1400">Breakfast, brunch,</span>', 'Bodoni Moda 70', roman);
+const line2 = await text('<span foreground="#eaa62a" letter_spacing="-1400">all day</span>', 'Bodoni Moda Italic 70', italic);
+const line3 = await text('<span foreground="#f3ead5" letter_spacing="-1400">everyday.</span>', 'Bodoni Moda 70', roman);
+const places = await text('<span foreground="#f3ead5" letter_spacing="3000">BRIXTON  ·  EAST DULWICH</span>', 'DM Sans Medium 17', sans);
+const logo = await sharp('research/img/background-logo.png').trim().resize({ width: 190 }).toBuffer();
 
-const strap = await sharp({
-  text: {
-    text: '<span foreground="#f6efc0">Breakfast, brunch, all day everyday</span>',
-    font: 'Inknut Antiqua 9.5',
-    fontfile: 'scripts/fonts/InknutAntiqua-Regular.ttf',
-    rgba: true,
-    dpi: 144,
-  },
-}).png().toBuffer();
-const strapMeta = await sharp(strap).metadata();
+const size = async (b) => sharp(b).metadata();
+const [m1, m2, m3, mp] = await Promise.all([size(line1), size(line2), size(line3), size(places)]);
 
-const logoTop = Math.round(cy - logoMeta.height / 2 - 40);
-await sharp(photo)
+const X = 60;
+await sharp({ create: { width: W, height: H, channels: 3, background: GREEN } })
   .composite([
-    { input: disc, left: 0, top: 0 },
-    { input: logo, left: Math.round(cx - logoMeta.width / 2), top: logoTop },
-    { input: strap, left: Math.round(cx - strapMeta.width / 2), top: logoTop + logoMeta.height + 14 },
-    { input: line, left: Math.round(cx - lineMeta.width / 2), top: logoTop + logoMeta.height + 14 + strapMeta.height + 10 },
+    { input: photo, left: W - PHOTO_W, top: 0 },
+    { input: logo, left: X, top: 48 },
+    { input: line1, left: X, top: 200 },
+    { input: line2, left: X, top: 200 + m1.height - 4 },
+    { input: line3, left: X, top: 200 + m1.height + m2.height - 8 },
+    { input: places, left: X + 2, top: H - 56 - mp.height },
   ])
   .jpeg({ quality: 84, progressive: false, trellisQuantisation: true, overshootDeringing: true, quantisationTable: 3, chromaSubsampling: '4:2:0' })
   .toFile('public/og.jpg');
 
 const meta = await sharp('public/og.jpg').metadata();
-console.log(`public/og.jpg ${meta.width}x${meta.height} ${meta.format} ${Math.round(statSync('public/og.jpg').size / 1024)}KB`);
+console.log(`public/og.jpg ${meta.width}x${meta.height} ${Math.round(statSync('public/og.jpg').size / 1024)}KB`, m1.width, m3.width);

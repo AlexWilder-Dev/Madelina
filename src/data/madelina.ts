@@ -55,6 +55,8 @@ const wine = (open: number, close: number): Session => ({ open, close, kind: 'wi
 
 export const brand = {
   strap: 'Breakfast, brunch, all day everyday',
+  /** Their own phrases, for the running line */
+  phrases: ['Breakfast', 'Brunch', 'All day', 'Everyday', 'The boozy brunch', 'Vegan bagel sandwiches', 'Gluten-free & vegan treats', 'Amazing coffee and teas'],
   smiles: 'Vibrant foods brought to you with vibrant smiles',
   about:
     'Cafe Madelina, the cozy green cafe has your favourite classic breakfast or the boozy brunch, vegan bagel sandwiches, amazing coffee and teas with gluten-free and vegan treats.',
@@ -225,15 +227,15 @@ export const events = {
   },
 };
 
-/* ------------------------------------------------------------------ dishes shown large */
+/* ------------------------------------------------------------------ dish photographs */
 
-
-export const showcase: { dishId: string; photo: string; alt: string }[] = [
-  { dishId: 'eggs-benedict', photo: dishBenedict, alt: 'Eggs Benedict with bacon, hollandaise, edible flowers and a side salad on a blue painted plate' },
-  { dishId: 'avocado-toast', photo: dishAvocado, alt: 'Avocado on toast with cherry tomatoes, pomegranate, pumpkin seeds and violas on a painted plate' },
-  { dishId: 'full-english', photo: dishEnglish, alt: 'Full English breakfast: bacon, sausages, fried eggs, beans, mushrooms, grilled tomato and sourdough, with a latte' },
-  { dishId: 'breakfast-bagel', photo: dishBagel, alt: 'Breakfast bagel with bacon, fried egg, avocado and spinach on a green painted plate' },
-];
+// Only dishes we have a real photo of; keyed by dish id so prices come from the chosen café's menu
+export const dishPhotos: Record<string, { src: string; alt: string }> = {
+  'full-english': { src: dishEnglish, alt: 'Full English breakfast: bacon, sausages, fried eggs, beans, mushrooms, grilled tomato and sourdough, with a latte' },
+  'eggs-benedict': { src: dishBenedict, alt: 'Eggs Benedict with bacon, hollandaise, edible flowers and a side salad on a blue painted plate' },
+  'avocado-toast': { src: dishAvocado, alt: 'Avocado on toast with cherry tomatoes, pomegranate, pumpkin seeds and violas on a painted plate' },
+  'breakfast-bagel': { src: dishBagel, alt: 'Breakfast bagel with bacon, fried egg, avocado and spinach on a green painted plate' },
+};
 
 /* ------------------------------------------------------------------ enquiries */
 

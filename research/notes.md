@@ -240,25 +240,35 @@ fine cheese boards").
 
 ## Design reasoning
 
-First version (rejected): an app-like layout of chips, bordered cards, a bottom action bar, round
-photo crops and drawn ornaments (plate-rim band, lamps, a garden sketch). It buried their best asset —
-the photography — under interface, and read as less considered than their own Squarespace page.
+Two rejected passes: (1) an app-like layout of chips, cards, a bottom action bar and drawn ornaments,
+which buried the photography under interface; (2) a near-copy of their Squarespace template, which
+added nothing.
 
-Second version, the one built:
-- **Their language, extended rather than replaced.** Their site is one big food photograph, a deep
-  green field, pale gold type, Inknut Antiqua capitals set small and tracked, and links in a brighter
-  green ("Menu Brixton"). All of that stays: same colours (`#123f26`, `#e5da85`, link green from their
-  `#3bab59`), same heading face, same link style, square-cornered photos at large sizes. Body text is
-  Archivo, standing in for their Adobe-only Acumin Pro.
-- **Information is typeset, not boxed.** The first phone screen is their tagline, the table photo with a
-  caption that names the dishes and prices them for the chosen café, then both cafés on two lines
-  with live status (like the hours on a door) and four plain links: call, directions, menu, book.
-- **The switch is two words**, "Brixton  Dulwich", as in their own header. It carries through prices,
-  phone, directions, the order of the cafés and the booking form, and is remembered.
-- **Evening**: Brixton on a Friday or Saturday from 6pm darkens the page, cross-fades the opening
-  photo to their drinks shot and changes the status line. Quiet, no props.
-- **Visitors' words sit where they're relevant** (the plates quote under the dishes, each café's
-  review under its description), not in a testimonials block.
+Reference points looked at: Toklas, Morito, Dishoom, Gail's, Jolene, Popham's, BAO, Max's Sandwich
+Shop. What the good ones share: one confident typeface used very large, food photography given space,
+a few strong colour grounds rather than one flat background, and very little interface chrome.
+
+The build:
+- **Type**: Bodoni Moda, very large, with italics for the words that matter ("*all day*",
+  "Madelina *Brixton*", "Wine *nights*"). A high-contrast didone suits their gold script logo and the
+  care in their plating, and it is nothing like a generic café site. DM Sans for everything small.
+- **Colour, all from them**: their deep green `#123f26` (site theme), cream from the plate glaze,
+  marigold from the flowers on every table (and close to their logo gold), terracotta from the plate
+  bodies, and pansy purple from the flower on the drinks photo, used for wine nights. Sections switch
+  ground: green opening, marigold running line, cream menu, green plates band, purple wine nights,
+  terracotta garden and hire, cream story, green footer.
+- **Their plates as objects**: the latte cup and a marbled bowl are cut out of their overhead photos
+  with circular masks and turn slowly as you scroll.
+- **First phone screen**: their tagline in big Bodoni, then "Choose your Madelina": *Brixton* and
+  *Dulwich* as two big italic words with live status ("Open until 4pm"), then call, directions and
+  book. The table photo follows with dish names and this café's prices pinned on it.
+- **The menu is the page**: brunch dishes as large Bodoni names with prices. On a wide screen the
+  photo beside the list changes as you hover; on a phone, dishes with a photo show it inline.
+- **Running line**: their own phrases ("The boozy brunch", "Vegan bagel sandwiches", "Gluten-free &
+  vegan treats") in italic Bodoni on marigold, separated by the five-petal flower from their logo.
+- **Evening**: Brixton on Friday or Saturday from 6pm turns the green grounds pansy purple, the
+  headline becomes "Wine night, *tonight*.", the photo becomes their drinks shot and the wine-nights
+  section moves to the top.
 
 ## What the owners most want this site to do
 

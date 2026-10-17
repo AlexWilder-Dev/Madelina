@@ -71,7 +71,9 @@ export function Book() {
       <AnimatePresence mode="wait">
         {sent ? (
           <motion.section key="sent" className="book__sent" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-            <h1>Thank you, {sent.name}.</h1>
+            <h1>
+              Thank you, <em>{sent.name}.</em>
+            </h1>
             <p className="book__summary">
               {sent.branchName} has your request: {sent.type.label.toLowerCase()} on {sent.date}
               {sent.time ? ` at ${sent.time}` : ''}, for {sent.guests} {sent.guests === 1 ? 'person' : 'people'}.
@@ -90,7 +92,9 @@ export function Book() {
         ) : (
           <motion.form key="form" className="book__form" onSubmit={submit} noValidate initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <header className="book__head">
-              <h1>Book</h1>
+              <h1>
+                Book a <em>table</em>
+              </h1>
               <p>Tell us when you’d like to come and we’ll get back to you. No need to DM.</p>
             </header>
 
@@ -149,7 +153,7 @@ export function Book() {
                 <label className="field">
                   <span className="field__label">Time</span>
                   <select value={time} onChange={(e) => setTime(e.target.value)} disabled={!date}>
-                    <option value="">{date ? 'Choose…' : 'Choose a day first'}</option>
+                    <option value="">{date ? 'Choose…' : 'Day first'}</option>
                     {times.map((t) => (
                       <option key={t.value} value={t.value}>
                         {t.label}
@@ -188,7 +192,7 @@ export function Book() {
               <textarea rows={3} value={notes} onChange={(e) => setNotes(e.target.value)} />
             </label>
 
-            <button type="submit" className="button">
+            <button type="submit" className="pill pill--ink pill--big">
               Send to {branch.name}
             </button>
             <p className="field__hint">
