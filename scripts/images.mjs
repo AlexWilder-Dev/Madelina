@@ -77,13 +77,3 @@ for (const [name, file, cx, cy, r, size] of cutouts) {
   const info = await sharp(masked).resize(size).webp({ quality: 82, alphaQuality: 90 }).toFile(`${OUT}/${name}.webp`);
   console.log(name, `${info.width}x${info.height}`, `${Math.round(info.size / 1024)}KB`);
 }
-
-// The wordmark again in their deep green, for cream backgrounds
-const { data, info: li } = await sharp(logo).resize({ width: 900 }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
-for (let i = 0; i < data.length; i += 4) {
-  data[i] = 0x12;
-  data[i + 1] = 0x3f;
-  data[i + 2] = 0x26;
-}
-await sharp(data, { raw: { width: li.width, height: li.height, channels: 4 } }).png({ compressionLevel: 9 }).toFile('src/assets/logo-wordmark-green.png');
-console.log('green logo done');
