@@ -1,82 +1,42 @@
 /*
-  Palette
-  - Greens and pale gold: the colours of their current site theme (bg #123f26, text #e5da85,
-    accents #186d45 / #3bab59 / #3c6722) and the teal behind their monogram (#004645).
-  - Gold: the logo wordmark (#e3b849).
-  - Glaze, terracotta, ochre, paprika, cobalt, umber, leaf: sampled from the painted plates and cups.
-  - Sage: the counter wall in Brixton.
-  - Brass: the dome pendants over the counter, used for the evening light.
+  Colours are Madelina's own: the deep green and pale gold of their current site theme,
+  the brighter green they use for links ("Menu Brixton"), and the logo's gold.
 */
 :root {
-  --green-950: #0c2a19;
-  --green-900: #123f26;
-  --green-800: #186d45;
-  --green-open: #3bab59;
-  --olive: #3c6722;
-  --teal: #004645;
+  --bg: #123f26;
+  --bg-deep: #0e3520;
+  --ink: #e5da85;
+  --ink-soft: rgba(229, 218, 133, 0.74);
+  --ink-faint: rgba(229, 218, 133, 0.5);
+  --rule: rgba(229, 218, 133, 0.26);
+  --link: #4cc06d;
   --gold: #e3b849;
-  --gold-pale: #e5da85;
-  --glaze: #f5eedb;
-  --glaze-deep: #ebe1c6;
-  --sage: #77786d;
-  --sage-light: #c9ccbb;
-  --terracotta: #a94b25;
-  --ochre: #e2a92b;
-  --paprika: #d4462a;
-  --cobalt: #2a4b9b;
-  --umber: #3a2618;
-  --leaf: #2f7a43;
-  --pansy: #4b2a78;
-  --brass: #b98a3e;
-  --brass-dark: #7d5a24;
-  --brass-light: #f1d18a;
-  --lamp-cord: #1c1c1c;
-  --ink: #1d2a20;
 
-  /* Surfaces (day) */
-  --bg: var(--green-900);
-  --bg-deep: var(--green-950);
-  --fg: var(--gold-pale);
-  --fg-strong: #f6efc0;
-  --fg-muted: rgba(229, 218, 133, 0.72);
-  --line: rgba(229, 218, 133, 0.22);
-  --card: #174a2e;
-  --paper: var(--glaze);
-  --paper-ink: var(--ink);
-  --paper-muted: #55604f;
-  --accent: var(--gold);
-  --glow: transparent;
+  --serif: 'Inknut Antiqua', Georgia, serif;
+  --sans: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
-  --font-display: 'Inknut Antiqua', Georgia, 'Times New Roman', serif;
-  --font-body: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
-
-  --radius: 14px;
-  --gutter: 16px;
-  --max: 1120px;
-  --bar-h: 64px;
+  --gutter: 20px;
+  --wide: 1200px;
+  --text: 600px;
+  --space: 88px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   color-scheme: dark;
 }
 
-/* Brixton, Friday and Saturday from 6pm: the lights go down and the brass lamps come on. */
+/* Brixton on a Friday or Saturday evening: the room goes darker and warmer. */
 :root[data-mode='evening'] {
-  --bg: #0b1f15;
-  --bg-deep: #07150e;
-  --card: #10291c;
-  --fg: #f0dfa0;
-  --fg-strong: #fff2c6;
-  --fg-muted: rgba(240, 223, 160, 0.68);
-  --line: rgba(241, 209, 138, 0.2);
-  --accent: var(--brass-light);
-  --paper: #1a2a1f;
-  --paper-ink: #f0e6c4;
-  --paper-muted: #b8b18f;
-  --glow: rgba(255, 196, 102, 0.16);
+  --bg: #0b2517;
+  --bg-deep: #081d11;
+  --ink: #f0dfa0;
+  --ink-soft: rgba(240, 223, 160, 0.74);
+  --ink-faint: rgba(240, 223, 160, 0.48);
+  --rule: rgba(240, 223, 160, 0.22);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   :root {
-    --gutter: 32px;
+    --gutter: 48px;
+    --space: 136px;
   }
 }

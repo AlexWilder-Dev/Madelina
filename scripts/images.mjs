@@ -9,29 +9,28 @@ mkdirSync(OUT, { recursive: true });
 
 // [output name, source file, crop {left, top, width, height} in source pixels or null, output width, quality]
 const jobs = [
-  // Shopfronts, 4:5
-  ['shop-brixton', 'IMG-6839.jpg', { left: 450, top: 0, width: 1500, height: 1875 }, 900],
-  ['shop-dulwich', 'IMG-6260.jpg', { left: 700, top: 0, width: 1500, height: 1875 }, 900],
-  // Round plates (square crops around the plate)
-  ['plate-avocado', 'c.jpg', { left: 0, top: 150, width: 1090, height: 1090 }, 720],
-  ['plate-bagel', 'c.jpg', { left: 1510, top: 50, width: 990, height: 990 }, 720],
-  ['plate-coffee', 'c.jpg', { left: 1100, top: 405, width: 520, height: 520 }, 520],
-  ['plate-croissant', 'cover.jpg', { left: 680, top: 435, width: 880, height: 880 }, 720],
-  ['plate-benedict', 'IMG_8051.jpeg', { left: 310, top: 940, width: 2190, height: 2190 }, 720],
-  ['plate-english', 'IMG_4155.jpeg', { left: 80, top: 700, width: 2200, height: 2200 }, 720],
-  // Full frames
-  ['table-cover', 'cover.jpg', null, 1600],
-  ['table-c', 'c.jpg', null, 1600],
-  ['pansy-drinks', 'IMG-6659.jpg', null, 1200],
+  // The table: their cover shot. Portrait cut for phones, the full frame for wide screens.
+  ['table-portrait', 'cover.jpg', { left: 0, top: 0, width: 1334, height: 1667 }, 900, 70],
+  ['table-wide', 'cover.jpg', null, 1800, 68],
+  // Dishes, 4:5
+  ['dish-benedict', 'IMG_8051.jpeg', { left: 0, top: 380, width: 2500, height: 3125 }, 1000],
+  ['dish-english', 'IMG_4155.jpeg', { left: 0, top: 300, width: 2500, height: 3125 }, 1000],
+  ['dish-avocado', 'avo.jpg', { left: 0, top: 300, width: 2500, height: 3125 }, 1000],
+  ['dish-bagel', 'c.jpg', { left: 1500, top: 0, width: 1000, height: 1250 }, 800],
+  // Menu page band, like the avocado close-up on their own menu pages
+  ['avocado-band', 'avo.jpg', { left: 0, top: 1100, width: 2500, height: 1100 }, 1800],
+  // Shopfronts
+  ['shop-brixton', 'IMG-6839.jpg', null, 1400],
+  ['shop-dulwich', 'IMG-6260.jpg', null, 1400],
+  // Drinks and the counter (counter photo: Volcano Coffee Works, credited on the page)
+  ['pansy-drinks', 'IMG-6659.jpg', null, 1400],
   ['counter', 'volcano/IMG_4097.jpg', null, 1400],
-  ['shelves', 'volcano/IMG_1301.jpg', { left: 0, top: 0, width: 4032, height: 3024 }, 1200],
-  ['spiced-cup', 'volcano/434284784_18281833249166882_4640557560329906479_n.jpg', null, 900],
 ];
 
-for (const [name, file, crop, width, q = 78] of jobs) {
+for (const [name, file, crop, width, quality = 80] of jobs) {
   let img = sharp(`${SRC}/${file}`).rotate();
   if (crop) img = img.extract(crop);
-  const info = await img.resize({ width, withoutEnlargement: true }).webp({ quality: q }).toFile(`${OUT}/${name}.webp`);
+  const info = await img.resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(`${OUT}/${name}.webp`);
   console.log(name, `${info.width}x${info.height}`, `${Math.round(info.size / 1024)}KB`);
 }
 
@@ -40,10 +39,10 @@ const logo = await sharp(`${SRC}/background-logo.png`).trim().toBuffer();
 const l = await sharp(logo).resize({ width: 900 }).png({ compressionLevel: 9 }).toFile('src/assets/logo-wordmark.png');
 console.log('logo', `${l.width}x${l.height}`, `${Math.round(l.size / 1024)}KB`);
 
-// Monogram (their favicon artwork): square crop for icons
+// Monogram (their favicon artwork): the artwork is slightly wider than tall,
+// so pad it square with its own green so the leaf and flower survive
 const mono = sharp(`${SRC}/favicon.ico`);
 const meta = await mono.metadata();
-// The artwork is slightly wider than tall; pad it square with its own green so the leaf and flower survive
 const side = Math.max(meta.width, meta.height);
 const padY = side - meta.height;
 const padX = side - meta.width;

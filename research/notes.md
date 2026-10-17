@@ -240,25 +240,25 @@ fine cheese boards").
 
 ## Design reasoning
 
-- **Palette**: deep green `#123f26` and pale gold `#e5da85` are the exact colours of their current site
-  theme ("the cozy green cafe"); logo gold `#e3b849`; monogram teal `#004645` for icons. The plates
-  supply the only other colours: cream glaze, terracotta, ochre, paprika, cobalt — used only in the
-  plate-rim band and price accents, never as blobs. Evening mode darkens the greens and swaps gold for
-  the warm brass of the counter pendants.
-- **Type**: Inknut Antiqua for headings is the heading font their Squarespace site already uses; their
-  body face, Acumin Pro, is Adobe-only, so Archivo (a free grotesque of the same build, with a width
-  axis for small caps-style labels) stands in.
-- **Ornament**: three things lifted from them, nothing else: the rim of their painted plates (ochre eyes
-  on cream between drip lines) as the section divider; the leaf sprig from their monogram; the brass
-  dome pendants over the counter, which light up on wine nights.
-- **Layout**: no hero. The first phone screen is the two real shopfronts as "doors", each topped by a
-  black fascia with gold lettering (Brixton's gold M, Dulwich's "No. 75") and a live open/closed line,
-  then the first plates. Food photos are cropped round, on their own plates, because that's how
-  every one of their photos is composed.
-- **Signature interactions**: (1) the Brixton / Dulwich switch carries through prices (they differ),
-  hours, phone, directions, what's on and the booking form, and is remembered; (2) on Friday and
-  Saturday from 6pm, with Brixton chosen, the site turns to wine night: darker room, lamps on, wine
-  first and brunch "tomorrow from 9am". There's a preview toggle so the owners can see it in daytime.
+First version (rejected): an app-like layout of chips, bordered cards, a bottom action bar, round
+photo crops and drawn ornaments (plate-rim band, lamps, a garden sketch). It buried their best asset —
+the photography — under interface, and read as less considered than their own Squarespace page.
+
+Second version, the one built:
+- **Their language, extended rather than replaced.** Their site is one big food photograph, a deep
+  green field, pale gold type, Inknut Antiqua capitals set small and tracked, and links in a brighter
+  green ("Menu Brixton"). All of that stays: same colours (`#123f26`, `#e5da85`, link green from their
+  `#3bab59`), same heading face, same link style, square-cornered photos at large sizes. Body text is
+  Archivo, standing in for their Adobe-only Acumin Pro.
+- **Information is typeset, not boxed.** The first phone screen is their tagline, the table photo with a
+  caption that names the dishes and prices them for the chosen café, then both cafés on two lines
+  with live status (like the hours on a door) and four plain links: call, directions, menu, book.
+- **The switch is two words**, "Brixton  Dulwich", as in their own header. It carries through prices,
+  phone, directions, the order of the cafés and the booking form, and is remembered.
+- **Evening**: Brixton on a Friday or Saturday from 6pm darkens the page, cross-fades the opening
+  photo to their drinks shot and changes the status line. Quiet, no props.
+- **Visitors' words sit where they're relevant** (the plates quote under the dishes, each café's
+  review under its description), not in a testimonials block.
 
 ## What the owners most want this site to do
 

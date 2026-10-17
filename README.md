@@ -8,14 +8,17 @@ Live demo: https://alexwilder-dev.github.io/Madelina/
 
 ## What's in it
 
-- **Brixton / Dulwich switch** that carries through the whole site — menu prices, hours, phone,
-  directions, what's on, the booking form — and is remembered on the device.
-- **Live open/closed** for both branches in London time, including Brixton's Friday and Saturday wine
-  nights. From 6pm on those evenings the site turns to wine night (there's a preview toggle in the
-  footer and on the What's on page).
-- Both menus transcribed from madelina.co.uk, plus what's on the counter.
-- Wine nights, private hire, the Dulwich garden, and an enquiry form for tables, wine nights, garden
-  tables and hire.
+- **Their look, given more room**: the deep green and pale gold of their current site, Inknut Antiqua
+  capitals for headings, their own green for links, and their photographs shown large on square
+  corners. No widgets, cards or drawn ornaments.
+- **Which café, open or not**: both cafés on two typeset lines under the opening photo, with live
+  open/closed in London time. Tap one to make it yours; the menu prices, phone, directions, hours
+  order and booking form follow, and the choice is remembered on the device.
+- **Brixton wine nights**: on Friday and Saturday from 6pm the page darkens, the opening photo turns
+  to drinks and the status reads "Wine night until 11pm". There's a preview link in the footer.
+- **Both menus**, transcribed from madelina.co.uk, with the other café's price noted where it differs,
+  plus what's on the counter.
+- **A booking request form** for a table, a wine night, a garden table or private hire (front end only).
 
 All content lives in `src/data/madelina.ts`. Sources and open questions are in `research/notes.md`.
 
@@ -33,8 +36,7 @@ Built with Vite, React, TypeScript, Framer Motion and React Router (hash routing
 `.github/workflows/deploy.yml` publishes `dist/` to GitHub Pages on every push to `main` or the current
 working branch (Settings → Pages → Source: GitHub Actions).
 
-Photos and logo are Madelina's own (from their website). Two interior photos come from Volcano Coffee
-Works' 2024 feature on the café and are credited where shown; a third image in that feature is one of
-Madelina's own Instagram photos.
+Photos and logo are Madelina's own (from their website). The counter photo comes from Volcano Coffee
+Works' 2024 feature on the café and is credited where shown.
 
 Site by AlexWilder-Dev

@@ -2,12 +2,10 @@ import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { HashRouter, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { BranchProvider, useBranch } from './lib/branch';
-import { ActionBar, Footer, Header } from './components/Chrome';
+import { Footer, Header } from './components/Frame';
 import { Home } from './pages/Home';
 import { Menu } from './pages/Menu';
-import { WhatsOn } from './pages/WhatsOn';
 import { Book } from './pages/Book';
-import { Visit } from './pages/Visit';
 
 /** /brixton and /dulwich: shareable links that pick the branch, then land on the home page. */
 function PickBranch() {
@@ -42,9 +40,7 @@ function Routed() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/whats-on" element={<WhatsOn />} />
           <Route path="/book" element={<Book />} />
-          <Route path="/visit" element={<Visit />} />
           <Route path="/:id" element={<PickBranch />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -62,7 +58,6 @@ export default function App() {
           <Header />
           <Routed />
           <Footer />
-          <ActionBar />
         </BranchProvider>
       </HashRouter>
     </MotionConfig>
