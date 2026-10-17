@@ -115,7 +115,8 @@ salad"). Only Garden Bliss carries Ⓥ; the Vegan Bagel is vegan by name.
   Chai Latte, Matcha Latte; Smoothies "Big 5", "Mother Earth", "Royal Berries". Prices on that board
   are 2024 and lower than today's food prices, so **no drink prices are used**.
 - Pastries (Homegirl London, Aug 2025): plain croissant, almond croissant, pain au chocolat, cinnamon
-  bun. Vegan banana bread, doughnuts, blondies (spinach.guide tips, undated).
+  bun. Banana bread, doughnuts and blondies (HappyCow reviews 2022 and 2025); pastel de nata
+  (DineAwards, Dulwich); carrot cake (Restaurant Guru photo caption, Dulwich).
 - Homegirl also mentions a halloumi salad on the in-café menu that isn't on the website.
 
 ## Who comes when
@@ -125,9 +126,8 @@ salad"). Only Garden Bliss carries Ⓥ; the Vegan Bagel is vegan by name.
 - **Weekend brunch**: the busy time; "Booking is recommended, especially at weekends" (Kid Friendly
   London, Dulwich); kids menu, high chairs and buggy access at Dulwich.
 - **Friday & Saturday evenings, Brixton, 6–11pm: wine nights** — "recently opened wine nights every
-  Friday and Saturday" with "cured meats and fine cheese boards" (TripAdvisor reviewer, c. Sept 2025,
-  via search snippet); "Visit on Friday evenings for wine nights with snacks and cheeseboards"
-  (spinach.guide). Booking by Instagram DM.
+  Friday and Saturday" with "cured meats and fine cheese boards" (TripAdvisor reviewer, c. Dec 2024,
+  search snippet only). Booking by Instagram DM.
 - **Summer**: the Dulwich garden; "DM to book … for visiting the Dulwich garden" (ma.to FAQ);
   "Lovely little outdoor garden too" (Romi S, Venuescanner, Sep 2025).
 - **Brixton's crowd**: "Cafe Madelina can be spotted from right down the street… often contrasted by
@@ -141,8 +141,7 @@ salad"). Only Garden Bliss carries Ⓥ; the Vegan Bagel is vegan by name.
 ## Events and hire
 
 - **Wine nights — Brixton only.** Fri & Sat 6–11pm per Thatsup (6 Jun 2026) and DineAwards; other
-  listings (Restaurant Guru, Spinach, Urbanary) show daytime hours only. Spinach: "Visit on Friday
-  evenings for wine nights with snacks and cheeseboards" and "occasional wine bar events". TripAdvisor
+  listings (Restaurant Guru, Spinach, Urbanary) show daytime hours only. TripAdvisor
   (snippet): "recently open wine nights every Friday and Saturday", "good wine", "delicious cured
   meats", "fine cheese boards". Booked by Instagram DM. **Exact current schedule unconfirmed.**
 - **Wreath & Wine** workshop at Madelina Brixton, 3 Dec 2024, run by White Lilium (TicketSource
@@ -172,7 +171,45 @@ owners — confirm before going live.**
 
 ## Reviews
 
-(see "Reviews" below — filled from the review research)
+Ratings: Brixton Google 4.5 (200 reviews, via Restaurant Guru, Oct 2026), TripAdvisor 3.5 (8);
+Dulwich Google 4.7 (90, Sep 2026). Restaurant Guru's own score for Dulwich is 3.3 (unexplained).
+
+**Quoted on the site (verbatim, credited):**
+- Brixton — willowisp, HappyCow, 18 Jul 2024: "It's a lovely place and the cups and plates are really
+  nice hand made stuff." (same review: "Nice friendly staff too!")
+- Brixton — ARN14, HappyCow, 11 Apr 2025: "The vegan banana bread was so delicious! Chai latte was very
+  big and also good"
+- Brixton — Thatsup "best cafés in Brixton" guide, Jul 2025: "Homely Brixton café Madelina is a popular
+  spot for brunch."
+- Dulwich — Jonathan Wollny, Google (via Restaurant Guru, c. Aug–Sep 2026): "A lovely cafe with amazing
+  food. I took my daughter here and she loved the egg and avocado salad." (the fetch cut the review at
+  120 characters, so only whole sentences are quoted)
+- Dulwich — Homegirl London, 3 Aug 2025: "It feels more like someone’s front parlour than a café, and
+  that’s precisely what makes it so appealing."
+- Dulwich — Cookie, Venuescanner, 6 Jul 2025: "Chorizo focaccia was fantastic!!"
+
+**Not used:** Tom Flanagan (Google, Dulwich: bacon sandwich on sourdough, halloumi bagel — possibly
+truncated); Noa Parren (Brixton: "Best in Brixton together with the Tesco."); TripAdvisor quotes
+(snippets only, names unseen); spinach.guide and hampsteadvillagelondon "tips" (unattributed machine
+summaries, not real reviews).
+
+**Praise**: the food, especially vegan/veggie brunch, bagels and focaccia, banana bread and bakes
+(8+); friendly staff (6+); coffee and chai (5), with the hand-made cups and plates mentioned 3 times;
+Dulwich's front-parlour room and garden. Wine nights: one customer source (TripAdvisor, c. Dec 2024,
+snippet: "recently open wine nights every Friday and Saturday… good wine and delicious cured meats and
+fine cheese boards").
+
+**Complaints**:
+- Brixton service: inattentive or rude in several reviews (TripAdvisor service sub-score 2.5; a Sept
+  2025 snippet about a takeaway cup when eating in and being ignored; HappyCow Oct 2023).
+- Brixton vegan labelling: V/VE symbols unclear, staff unsure what vegan meant (HappyCow, Oct 2023).
+  This is why the site shows only the Ⓥ they print, and nothing else.
+- Brixton: a 10% charge at the till, stale salad, cold coffee (TripAdvisor snippets, 2023–24); the house
+  dog (Oct 2023).
+- Hours: "Closes at 3pm" (HappyCow, 2022).
+- Dulwich: very few; prices "not the lowest" (East Dulwich Forum snippet).
+- Search confusion: Yell, AllInLondon and MapQuest still list "Piece of Cake, 105 Acre Lane" as
+  permanently closed — the old name, but it can mislead people searching.
 
 ## What's weak on the current site (madelina.co.uk, Squarespace)
 

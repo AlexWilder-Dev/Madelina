@@ -321,7 +321,7 @@ export const enquiryTypes: EnquiryType[] = [
 export const events = {
   wine: {
     title: 'Wine nights',
-    // Fri/Sat 6–11pm per Thatsup (updated June 2026) and DineAwards; boards per TripAdvisor and spinach.guide reviewers
+    // Fri/Sat 6–11pm per Thatsup (updated June 2026) and DineAwards; boards per a TripAdvisor reviewer
     body: 'On Friday and Saturday evenings the Brixton café stays open late for wine, with cheese boards and cured meats.',
     when: 'Friday & Saturday, 6pm–11pm',
   },
@@ -360,24 +360,24 @@ export type Review = { quote: string; who: string; where: string; when?: string;
 // Only real, credited reviews, quoted exactly. Sources in research/notes.md.
 export const reviews: Review[] = [
   {
-    quote: 'A lovely cafe with amazing food. I took my daughter here and she loved the egg and avocado salad. I had the breakfast bagel',
+    quote: 'It’s a lovely place and the cups and plates are really nice hand made stuff.',
+    who: 'willowisp',
+    where: 'HappyCow',
+    when: 'July 2024',
+    branch: 'brixton',
+  },
+  {
+    quote: 'A lovely cafe with amazing food. I took my daughter here and she loved the egg and avocado salad.',
     who: 'Jonathan W.',
     where: 'Google review',
     when: '2026',
     branch: 'dulwich',
   },
   {
-    quote: 'Enjoyed a really nice brunch in Madelina, had a nice bacon sandwich on sourdough and my wife enjoyed her halloumi bagel',
-    who: 'Tom F.',
-    where: 'Google review',
-    when: '2026',
-    branch: 'dulwich',
-  },
-  {
-    quote: 'Homely Brixton café Madelina is a popular spot for brunch.',
-    who: 'Thatsup',
-    where: 'The best cafés in Brixton',
-    when: 'July 2025',
+    quote: 'The vegan banana bread was so delicious! Chai latte was very big and also good',
+    who: 'ARN14',
+    where: 'HappyCow',
+    when: 'April 2025',
     branch: 'brixton',
   },
   {
@@ -386,6 +386,13 @@ export const reviews: Review[] = [
     where: 'blog',
     when: 'August 2025',
     branch: 'dulwich',
+  },
+  {
+    quote: 'Homely Brixton café Madelina is a popular spot for brunch.',
+    who: 'Thatsup',
+    where: 'The best cafés in Brixton',
+    when: 'July 2025',
+    branch: 'brixton',
   },
   {
     quote: 'Chorizo focaccia was fantastic!!',
