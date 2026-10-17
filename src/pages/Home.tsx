@@ -46,7 +46,10 @@ function Here() {
           transition={{ duration: 0.22 }}
         >
           <p className="eyebrow">{branch.name}</p>
-          <p className="here__now">{head}</p>
+          <p className="here__now">
+            {/* Inknut's old-style figures make "11pm" read as "IIpm": set digits in the body face */}
+            {head.split(/(\d[\d.]*)/).map((part, i) => (i % 2 ? <span key={i} className="num">{part}</span> : part))}
+          </p>
           {sub && <p className="here__sub here__sub--desk">{sub}</p>}
           <p className="here__sub">
             <strong className="here__phone-name">{branch.short}, today: </strong>
