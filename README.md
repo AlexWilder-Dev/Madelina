@@ -4,7 +4,7 @@ A speculative redesign for [Madelina](https://www.madelina.co.uk), the family-ru
 105 Acre Lane, Brixton and 75 East Dulwich Grove. Front end only: the booking and hire forms show a
 confirmation but send nothing.
 
-Live demo: https://alexwilder-dev.github.io/madelina/
+Live demo: https://alexwilder-dev.github.io/Madelina/
 
 ## What's in it
 
@@ -23,7 +23,7 @@ All content lives in `src/data/madelina.ts`. Sources and open questions are in `
 
 ```sh
 npm install
-npm run dev       # http://localhost:5173/madelina/
+npm run dev       # http://localhost:5173/Madelina/
 npm run build     # type-check and build to dist/
 npm run images    # re-crop photos from research/img into src/assets/photos
 npm run og        # rebuild public/og.jpg (1200×630 link preview)
