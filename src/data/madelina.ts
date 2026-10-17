@@ -144,14 +144,15 @@ export const branches: Record<BranchId, Branch> = {
     ],
     outside:
       'Madelina Brixton: a black-painted corner shopfront with a gold M on the fascia, awnings and folding tables outside',
-    // Thatsup listing, updated 6 June 2026 (daytime hours match the 2024 Volcano Coffee Works interview)
+    // Daytime: their Google listing, 17 Oct 2026. Wine nights: Thatsup (June 2026) and DineAwards;
+    // Google lists no evening hours, so these are the first thing to confirm with the owners.
     hours: [
       [day(h(10), h(16))],
       [day(h(8), h(15))],
       [day(h(8), h(15))],
       [day(h(8), h(15))],
       [day(h(8), h(15))],
-      [day(h(8), h(15)), wine(h(18), h(23))],
+      [day(h(8), h(16)), wine(h(18), h(23))],
       [day(h(9), h(16)), wine(h(18), h(23))],
     ],
     menu: brixtonMenu,
@@ -359,6 +360,20 @@ export type Review = { quote: string; who: string; where: string; when?: string;
 
 // Only real, credited reviews, quoted exactly. Sources in research/notes.md.
 export const reviews: Review[] = [
+  {
+    quote: 'Delicious food and drink, with a wide selection (vegetarian-friendly), at very reasonable prices. The décor is lovely too, and the waitresses are very friendly.',
+    who: 'Lola B.',
+    where: 'Google review',
+    when: '2026',
+    branch: 'brixton',
+  },
+  {
+    quote: 'My fiancé and I have just moved around the corner and thought we’d check it out and wow! Food, service and coffee were unreal.',
+    who: 'Jack V.',
+    where: 'Google review',
+    when: '2026',
+    branch: 'brixton',
+  },
   {
     quote: 'It’s a lovely place and the cups and plates are really nice hand made stuff.',
     who: 'willowisp',

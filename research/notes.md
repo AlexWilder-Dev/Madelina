@@ -160,7 +160,7 @@ salad"). Only Garden Bliss carries Ⓥ; the Vegan Bagel is vegan by name.
 
 | | Mon–Thu | Fri | Sat | Sun | Source |
 |---|---|---|---|---|---|
-| Brixton | 8am–3pm | 8am–3pm, 6–11pm | 9am–4pm, 6–11pm | 10am–4pm | Thatsup (updated 6 Jun 2026); same daytime hours in Volcano interview (Mar 2024) |
+| Brixton | 8am–3pm | 8am–4pm, 6–11pm | 9am–4pm, 6–11pm | 10am–4pm | Daytime: their Google listing, 17 Oct 2026. Evenings: Thatsup (6 Jun 2026) and DineAwards only — Google shows none |
 | Dulwich | 8am–3pm | 8am–3pm | 9am–3pm | 10am–3pm | Homegirl London (Aug 2025), brief's listings |
 
 Dulwich Sunday 10–3 is backed by Restaurant Guru (Sep 2026), InTravel (Sep 2026), Homegirl (Aug
@@ -171,10 +171,22 @@ owners — confirm before going live.**
 
 ## Reviews
 
+Google Maps, Brixton (loaded 17 Oct 2026): 4.5 from 201; Mon–Thu 8–3, Fri 8–4, Sat 9–4, Sun 10–4, no
+evening hours. Recent named reviews: Jack Verweij (c. Aug 2026: "Food, service and coffee were
+unreal."), Lola Blaise (c. May 2026), S Raj (c. Aug 2026, complaint: "Over priced and average place…
+given a chipped cup and chipped saucer… no prices clearly on the menu"). Google's topic counts:
+friendly staff 55, cakes 15, vegan options 9, smoothies 7, generous portions 5, outside seating 4,
+almond croissant 3. Dulwich on Google: 4.7 from 92.
+
 Ratings: Brixton Google 4.5 (200 reviews, via Restaurant Guru, Oct 2026), TripAdvisor 3.5 (8);
 Dulwich Google 4.7 (90, Sep 2026). Restaurant Guru's own score for Dulwich is 3.3 (unexplained).
 
 **Quoted on the site (verbatim, credited):**
+- Brixton — Lola Blaise, Google, c. May 2026: "Delicious food and drink, with a wide selection
+  (vegetarian-friendly), at very reasonable prices. The décor is lovely too, and the waitresses are
+  very friendly."
+- Brixton — Jack Verweij, Google, c. Aug 2026: "My fiancé and I have just moved around the corner and
+  thought we'd check it out and wow! Food, service and coffee were unreal." (review continues)
 - Brixton — willowisp, HappyCow, 18 Jul 2024: "It's a lovely place and the cups and plates are really
   nice hand made stuff." (same review: "Nice friendly staff too!")
 - Brixton — ARN14, HappyCow, 11 Apr 2025: "The vegan banana bread was so delicious! Chai latte was very
@@ -207,6 +219,9 @@ fine cheese boards").
 - Brixton: a 10% charge at the till, stale salad, cold coffee (TripAdvisor snippets, 2023–24); the house
   dog (Oct 2023).
 - Hours: "Closes at 3pm" (HappyCow, 2022).
+- Brixton, 2026 (Google): overpriced, no prices on the menu, chipped cup and saucer (S Raj); an English
+  breakfast missing tomato and mushrooms (unnamed Google extract). Showing prices clearly online is one
+  thing this site fixes.
 - Dulwich: very few; prices "not the lowest" (East Dulwich Forum snippet).
 - Search confusion: Yell, AllInLondon and MapQuest still list "Piece of Cake, 105 Acre Lane" as
   permanently closed — the old name, but it can mislead people searching.
