@@ -30,7 +30,8 @@ npm run og        # rebuild public/og.jpg (1200×630 link preview)
 ```
 
 Built with Vite, React, TypeScript, Framer Motion and React Router (hash routing for GitHub Pages).
-`.github/workflows/deploy.yml` publishes `dist/` to GitHub Pages on every push to `main`.
+`.github/workflows/deploy.yml` publishes `dist/` to GitHub Pages on every push to `main` or the current
+working branch (Settings → Pages → Source: GitHub Actions).
 
 Photos and logo are Madelina's own (from their website). Two interior photos come from Volcano Coffee
 Works' 2024 feature on the café and are credited where shown; a third image in that feature is one of

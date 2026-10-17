@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/inspiring-mendel-n4wwog]
   workflow_dispatch:
 
 permissions:
