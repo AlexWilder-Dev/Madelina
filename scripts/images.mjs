@@ -9,9 +9,6 @@ mkdirSync(OUT, { recursive: true });
 
 // [output name, source file, crop {left, top, width, height} in source pixels or null, output width, quality]
 const jobs = [
-  // The table: their cover shot. Portrait cut for phones, the full frame for wide screens.
-  ['table-portrait', 'cover.jpg', { left: 0, top: 0, width: 1334, height: 1667 }, 900, 70],
-  ['table-wide', 'cover.jpg', null, 1800, 68],
   // Dishes, 4:5
   ['dish-benedict', 'IMG_8051.jpeg', { left: 0, top: 380, width: 2500, height: 3125 }, 1000],
   ['dish-english', 'IMG_4155.jpeg', { left: 0, top: 300, width: 2500, height: 3125 }, 1000],
@@ -19,12 +16,12 @@ const jobs = [
   ['dish-bagel', 'c.jpg', { left: 1500, top: 0, width: 1000, height: 1250 }, 800],
   // Menu page band, like the avocado close-up on their own menu pages
   ['avocado-band', 'avo.jpg', { left: 0, top: 1100, width: 2500, height: 1100 }, 1800],
-  // Shopfronts
-  ['shop-brixton', 'IMG-6839.jpg', null, 1400],
-  ['shop-dulwich', 'IMG-6260.jpg', null, 1400],
+  // Shopfronts, 4:5 like the dish prints
+  ['shop-brixton', 'IMG-6839.jpg', { left: 380, top: 0, width: 1500, height: 1875 }, 900],
+  ['shop-dulwich', 'IMG-6260.jpg', { left: 760, top: 0, width: 1500, height: 1875 }, 900],
   // Drinks and the counter (counter photo: Volcano Coffee Works, credited on the page)
-  ['pansy-drinks', 'IMG-6659.jpg', null, 1400],
-  ['counter', 'volcano/IMG_4097.jpg', null, 1400],
+  ['pansy-drinks', 'IMG-6659.jpg', { left: 280, top: 0, width: 1500, height: 1875 }, 900],
+  ['counter', 'volcano/IMG_4097.jpg', { left: 600, top: 0, width: 2411, height: 3014 }, 900],
 ];
 
 for (const [name, file, crop, width, quality = 80] of jobs) {
@@ -33,11 +30,6 @@ for (const [name, file, crop, width, quality = 80] of jobs) {
   const info = await img.resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(`${OUT}/${name}.webp`);
   console.log(name, `${info.width}x${info.height}`, `${Math.round(info.size / 1024)}KB`);
 }
-
-// Logo: trim the transparent padding around the gold wordmark
-const logo = await sharp(`${SRC}/background-logo.png`).trim().toBuffer();
-const l = await sharp(logo).resize({ width: 900 }).png({ compressionLevel: 9 }).toFile('src/assets/logo-wordmark.png');
-console.log('logo', `${l.width}x${l.height}`, `${Math.round(l.size / 1024)}KB`);
 
 // Monogram (their favicon artwork): the artwork is slightly wider than tall,
 // so pad it square with its own green so the leaf and flower survive
@@ -57,23 +49,12 @@ await sharp(square).resize(48).png().toFile('public/favicon-48.png');
 await sharp(square).resize(192).png().toFile('public/icon-192.png');
 console.log('icons done');
 
-// Cut-outs: whole cups and bowls lifted out of the overhead shots with a circular mask
-const cutouts = [
-  ['cut-latte', 'c.jpg', 1366, 672, 247, 600],
-  ['cut-bowl', 'cover.jpg', 1748, 719, 301, 700],
-];
-for (const [name, file, cx, cy, r, size] of cutouts) {
-  const side = r * 2;
-  const mask = Buffer.from(
-    `<svg width="${side}" height="${side}"><circle cx="${r}" cy="${r}" r="${r - 1}" fill="#fff"/></svg>`,
-  );
-  // Two passes: sharp would otherwise resize before compositing the mask
-  const masked = await sharp(`${SRC}/${file}`)
-    .extract({ left: cx - r, top: cy - r, width: side, height: side })
-    .ensureAlpha()
-    .composite([{ input: mask, blend: 'dest-in' }])
-    .png()
-    .toBuffer();
-  const info = await sharp(masked).resize(size).webp({ quality: 82, alphaQuality: 90 }).toFile(`${OUT}/${name}.webp`);
-  console.log(name, `${info.width}x${info.height}`, `${Math.round(info.size / 1024)}KB`);
+
+// The wordmark recoloured for this design: plate navy on the cream ground, cream on navy
+const trimmed = await sharp(`${SRC}/background-logo.png`).trim().resize({ width: 900 }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+for (const [name, rgb] of [['logo-navy', [0x22, 0x30, 0x5c]], ['logo-cream', [0xf6, 0xec, 0xdc]]]) {
+  const px = Buffer.from(trimmed.data);
+  for (let i = 0; i < px.length; i += 4) [px[i], px[i + 1], px[i + 2]] = rgb;
+  await sharp(px, { raw: { width: trimmed.info.width, height: trimmed.info.height, channels: 4 } }).png({ compressionLevel: 9 }).toFile(`src/assets/${name}.png`);
 }
+console.log('logos done');

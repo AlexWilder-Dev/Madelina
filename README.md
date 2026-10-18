@@ -8,16 +8,15 @@ Live demo: https://alexwilder-dev.github.io/Madelina/
 
 ## What's in it
 
-- **Big editorial type and their own colours**: Bodoni Moda headlines on Madelina's deep green, with
-  cream, marigold, terracotta and pansy purple taken from their plates, flowers and drinks.
-- **Choose your Madelina**: *Brixton* and *Dulwich* as two big words with live open/closed in London
-  time. The choice carries through prices, phone, directions, café order and the booking form, and is
-  remembered on the device.
-- **Brixton wine nights**: on Friday and Saturday from 6pm the site turns purple and leads with wine.
+- **Colours from their painted plates**: glaze cream, navy brushwork, terracotta and ochre, with a soft
+  Fraunces serif and Instrument Sans.
+- **Their dishes as prints on a table**, captioned with the chosen café's prices. Tap to bring one to
+  the top, or slide them around with a mouse.
+- **Brixton / Dulwich switch** in the status line, with live open/closed in London time. Prices, phone,
+  directions, café order and the booking form follow, and the choice is remembered.
+- **Brixton wine nights**: on Friday and Saturday from 6pm the site turns navy and leads with wine.
   There's a preview link in the footer.
-- **Both menus**, transcribed from madelina.co.uk, with dish photos where they have them and the other
-  café's price noted where it differs, plus what's on the counter.
-- **Their plates**: a cup and a bowl cut out of their photos, turning as you scroll.
+- **Both menus**, transcribed from madelina.co.uk, as a printed menu card, plus what's on the counter.
 - **A booking request form** for a table, a wine night, a garden table or private hire (front end only).
 
 All content lives in `src/data/madelina.ts`. Sources and open questions are in `research/notes.md`.

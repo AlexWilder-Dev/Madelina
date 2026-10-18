@@ -55,8 +55,6 @@ const wine = (open: number, close: number): Session => ({ open, close, kind: 'wi
 
 export const brand = {
   strap: 'Breakfast, brunch, all day everyday',
-  /** Their own phrases, for the running line */
-  phrases: ['Breakfast', 'Brunch', 'All day', 'Everyday', 'The boozy brunch', 'Vegan bagel sandwiches', 'Gluten-free & vegan treats', 'Amazing coffee and teas'],
   smiles: 'Vibrant foods brought to you with vibrant smiles',
   about:
     'Cafe Madelina, the cozy green cafe has your favourite classic breakfast or the boozy brunch, vegan bagel sandwiches, amazing coffee and teas with gluten-free and vegan treats.',

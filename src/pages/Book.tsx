@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import { brand, branches, enquiryTypes, type EnquiryType, type EnquiryTypeId } from '../data/madelina';
 import { useBranch } from '../lib/branch';
 import { longDate, timesFor, upcomingDates } from '../lib/slots';
-import { BranchWords } from '../components/BranchWords';
+import { CafeSwitch } from '../components/CafeSwitch';
 
 type Sent = { name: string; type: EnquiryType; branchName: string; date: string; time?: string; guests: number };
 
@@ -70,7 +70,7 @@ export function Book() {
     <main className="book">
       <AnimatePresence mode="wait">
         {sent ? (
-          <motion.section key="sent" className="book__sent" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
+          <motion.section key="sent" className="book__sent card" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
             <h1>
               Thank you, <em>{sent.name}.</em>
             </h1>
@@ -90,7 +90,7 @@ export function Book() {
             </p>
           </motion.section>
         ) : (
-          <motion.form key="form" className="book__form" onSubmit={submit} noValidate initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <motion.form key="form" className="book__form card" onSubmit={submit} noValidate initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <header className="book__head">
               <h1>
                 Book a <em>table</em>
@@ -100,7 +100,7 @@ export function Book() {
 
             <div className="field">
               <span className="field__label">Café</span>
-              <BranchWords id="book" />
+              <CafeSwitch showStatus={false} />
             </div>
 
             <fieldset className="field">
@@ -192,7 +192,7 @@ export function Book() {
               <textarea rows={3} value={notes} onChange={(e) => setNotes(e.target.value)} />
             </label>
 
-            <button type="submit" className="pill pill--ink pill--big">
+            <button type="submit" className="btn btn--terra btn--big">
               Send to {branch.name}
             </button>
             <p className="field__hint">

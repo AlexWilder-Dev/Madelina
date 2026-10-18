@@ -66,7 +66,7 @@ export function BranchProvider({ children }: { children: ReactNode }) {
     document.documentElement.dataset.mode = evening ? 'evening' : 'day';
     document.documentElement.dataset.branch = effectiveId;
     const meta = document.querySelector('meta[name="theme-color"]');
-    meta?.setAttribute('content', evening ? '#0b2517' : '#123f26');
+    meta?.setAttribute('content', evening ? '#1d2850' : '#f2e7d6');
   }, [evening, effectiveId]);
 
   const value: Ctx = {

@@ -1,32 +1,46 @@
 /*
-  Madelina's green and gold (their site theme and logo), with the colours of their painted
-  plates and garnishes: glaze cream, marigold, terracotta, and the purple of the pansies on top.
+  Taken from Madelina's painted plates: the glaze cream they're fired on, the navy of the
+  brushwork, terracotta from the clay, and the ochre "eyes" around the rims.
 */
 :root {
-  --green: #123f26;
-  --green-deep: #0c2e1b;
-  --cream: #f3ead5;
-  --cream-deep: #eadcbc;
-  --gold: #e3b849;
-  --marigold: #eaa62a;
-  --terracotta: #b4512a;
-  --pansy: #2e1747;
-  --pansy-light: #c9a8e8;
-  --ink: #123f26;
-  --ink-soft: rgba(18, 63, 38, 0.72);
-  --ink-line: rgba(18, 63, 38, 0.18);
-  --paper: #f3ead5;
-  --paper-soft: rgba(243, 234, 213, 0.72);
-  --paper-line: rgba(243, 234, 213, 0.22);
+  --ground: #f2e7d6;
+  --ground-deep: #eadcc5;
+  --paper: #fbf6ec;
+  --ink: #22305c;
+  --ink-soft: #5c6584;
+  --ink-line: rgba(34, 48, 92, 0.16);
+  --terra: #c0532b;
+  --terra-deep: #a5431f;
+  --ochre: #e0a32a;
+  --open: #3f9a5b;
+  --navy: #1d2850;
+  --cream: #f6ecdc;
+  --cream-soft: rgba(246, 236, 220, 0.74);
+  --cream-line: rgba(246, 236, 220, 0.2);
+  --print-shadow: 0 16px 34px rgba(70, 44, 18, 0.22), 0 2px 6px rgba(70, 44, 18, 0.12);
 
-  --display: 'Bodoni Moda Variable', 'Bodoni Moda', 'Didot', Georgia, serif;
-  --sans: 'DM Sans Variable', 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+  --sans: 'Instrument Sans Variable', 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --gutter: 20px;
-  --wide: 1320px;
+  --wide: 1180px;
   --ease: cubic-bezier(0.22, 0.75, 0.2, 1);
 
   color-scheme: light;
+}
+
+/* Brixton on a Friday or Saturday evening: the room goes navy, the prints stay lit. */
+:root[data-mode='evening'] {
+  --ground: #1d2850;
+  --ground-deep: #172144;
+  --paper: #243163;
+  --ink: #f6ecdc;
+  --ink-soft: rgba(246, 236, 220, 0.72);
+  --ink-line: rgba(246, 236, 220, 0.18);
+  --terra: #e0a32a;
+  --terra-deep: #c98d17;
+  --print-shadow: 0 18px 40px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
 }
 
 @media (min-width: 900px) {

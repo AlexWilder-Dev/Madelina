@@ -240,35 +240,28 @@ fine cheese boards").
 
 ## Design reasoning
 
-Two rejected passes: (1) an app-like layout of chips, cards, a bottom action bar and drawn ornaments,
-which buried the photography under interface; (2) a near-copy of their Squarespace template, which
-added nothing.
+Rejected along the way: an app-like dashboard (chips, cards, action bar); a near-copy of their current
+dark-green Squarespace page; a dark-green editorial layout with giant Bodoni type and colour-block
+sections. After those, three first-screen directions were mocked up with their real photos (light
+editorial, hand-painted, bold graphic) and the hand-painted one was chosen.
 
-Reference points looked at: Toklas, Morito, Dishoom, Gail's, Jolene, Popham's, BAO, Max's Sandwich
-Shop. What the good ones share: one confident typeface used very large, food photography given space,
-a few strong colour grounds rather than one flat background, and very little interface chrome.
-
-The build:
-- **Type**: Bodoni Moda, very large, with italics for the words that matter ("*all day*",
-  "Madelina *Brixton*", "Wine *nights*"). A high-contrast didone suits their gold script logo and the
-  care in their plating, and it is nothing like a generic café site. DM Sans for everything small.
-- **Colour, all from them**: their deep green `#123f26` (site theme), cream from the plate glaze,
-  marigold from the flowers on every table (and close to their logo gold), terracotta from the plate
-  bodies, and pansy purple from the flower on the drinks photo, used for wine nights. Sections switch
-  ground: green opening, marigold running line, cream menu, green plates band, purple wine nights,
-  terracotta garden and hire, cream story, green footer.
-- **Their plates as objects**: the latte cup and a marbled bowl are cut out of their overhead photos
-  with circular masks and turn slowly as you scroll.
-- **First phone screen**: their tagline in big Bodoni, then "Choose your Madelina": *Brixton* and
-  *Dulwich* as two big italic words with live status ("Open until 4pm"), then call, directions and
-  book. The table photo follows with dish names and this café's prices pinned on it.
-- **The menu is the page**: brunch dishes as large Bodoni names with prices. On a wide screen the
-  photo beside the list changes as you hover; on a phone, dishes with a photo show it inline.
-- **Running line**: their own phrases ("The boozy brunch", "Vegan bagel sandwiches", "Gluten-free &
-  vegan treats") in italic Bodoni on marigold, separated by the five-petal flower from their logo.
-- **Evening**: Brixton on Friday or Saturday from 6pm turns the green grounds pansy purple, the
-  headline becomes "Wine night, *tonight*.", the photo becomes their drinks shot and the wine-nights
-  section moves to the top.
+The build ("hand-painted"):
+- **Colour from the plates**: the ground is the cream glaze the pottery is fired on (`#f2e7d6`), type
+  is the navy of the brushwork (`#22305c`), accents are terracotta clay (`#c0532b`) and the ochre of the
+  rim "eyes" (`#e0a32a`). The dark green is gone; their wordmark is recoloured navy (cream on navy).
+- **Type**: Fraunces with its soft axis turned up, a warm serif that feels hand-made next to their
+  script logo, with italics for café names and key words; Instrument Sans for everything small.
+- **Their photos as prints on a table**: every photo they have is shot overhead on a wooden café
+  table, so dishes appear as white-bordered prints with pencil captions (dish name and this café's
+  price), dealt slightly askew. Tap one to bring it to the top; with a mouse you can slide them about.
+- **The café switch is the status line**: "● *Brixton* open till 4pm  ● *Dulwich* open till 3pm".
+  Tapping a name chooses it; prices on the prints and menu, phone, directions and the booking form
+  follow, and it's remembered.
+- **The menu as a printed card** on the table, with small prints beside the dishes they have photos of
+  and the other café's price noted where it differs.
+- **Evening**: Brixton on Friday or Saturday from 6pm turns the whole page navy, the headline becomes
+  "Wine night at *Brixton*", the prints become the drinks, the counter under its brass lamps and the
+  shopfront, and booking defaults to wine night.
 
 ## What the owners most want this site to do
 
